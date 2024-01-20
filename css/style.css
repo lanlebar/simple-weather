@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.nav-link {
+    color: black !important;
+}
+.nav-link:hover {
+    color: grey !important;
+}
+.animateable {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+#dodanoMesto {
+    color: green;
+    font-weight: bold;
+    display: none;
+}
+#noGeolocation {
+    display: none;
+    position: fixed;
+    left: 50px;
+    top: 80px;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(255, 0, 0, 75%);
+    border-radius: 5px;
+    padding: 10px;
+}
+#weatherInfo {
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 10px;
+}
+#infoWindow {
+    display: none;
+    position: fixed;
+    right: 10px;
+    top: 50px;
+    width: 350px;
+    font-size: small;
+    background-color: white;
+    border: black solid 1px;
+    border-radius: 10px;
+    padding: 6px;
+    text-align: center;
+}
+#guessCont {
+    width: 400px !important;
+}
+#imageHelp {
+    display: inline !important;
+}
+.win {
+    color: green;
+    font-weight: bold;
+}
+.lose {
+    color: red;
+    font-weight: bold;
+}
+.blink {
+    animation: blink-animation 1s;
+}
+@keyframes blink-animation {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
