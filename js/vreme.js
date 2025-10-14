@@ -1,4 +1,4 @@
-const API_KEY = 'a4da8be64be49ffca203d5f1010128bb';
+const API_KEY = 'a4da8be64be49ffca203d5f1010128bb'; // don't worry, you didn't strike gold, it's deactivated
 let unit = 'metric';
 let shortUnit = '°C';
 let API_URL = `https://api.openweathermap.org/data/2.5/weather?lang=sl&appid=${API_KEY}&units=${unit}&`;
